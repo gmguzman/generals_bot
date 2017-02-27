@@ -10,6 +10,11 @@ socket.on('disconnect', function() {
 
 socket.on('connect', function() {
 	console.log('Connected to server.');
-
-	// TODO
+	//do not reveal ID
+	var user_id = 'INSERT_YOUR_ID';
+	var username = '[Bot]SimplePBotAlpha'
+	//set username with new updates
+	socket.emit(set_username, user_id, username);
+	
+	
 });
